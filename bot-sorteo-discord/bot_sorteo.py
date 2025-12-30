@@ -3,7 +3,7 @@ from discord.ext import commands
 import os
 from keep_alive import keep_alive
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("DISCORD_TOKEN")
 ARCHIVO = "participantes.txt"
 sorteo_abierto = True
 
@@ -103,5 +103,6 @@ async def reset(ctx):
 keep_alive()
 
 bot.run(TOKEN)
+
 
 
